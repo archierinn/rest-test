@@ -22,6 +22,6 @@ app.use(bodyParser.json())
     res.json({status: true, message: "Connected"})
    });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT, () => {
  console.log("Server running on port 8000");
 });
